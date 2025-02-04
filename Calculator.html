@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=oTyxAxj0tuPz&format=png&color=000000">
+</head>
+<body>
+    <div class="container">
+        <h1 class="pacifico-regular">My Calculator</h1>
+        <div class="Calculator">
+            <input id="display" type="text" class="display" readonly>
+            <div>
+                <button class="button" onclick="appendToDisplay(1)">1</button>
+                <button class="button" onclick="appendToDisplay(2)">2</button>
+                <button class="button" onclick="appendToDisplay(3)">3</button>
+                <button class="sign-buttons" onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div>
+                <button class="button" onclick="appendToDisplay(4)">4</button>
+                <button class="button" onclick="appendToDisplay(5)">5</button>
+                <button class="button" onclick="appendToDisplay(6)">6</button>
+                <button class="sign-buttons" onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div>
+                <button class="button" onclick="appendToDisplay(7)">7</button>
+                <button class="button" onclick="appendToDisplay(8)">8</button>
+                <button class="button" onclick="appendToDisplay(9)">9</button>
+                <button class="sign-buttons" onclick="appendToDisplay('*')">x</button>
+            </div>
+            <div>
+                <button class="button" onclick="appendToDisplay(0)">0</button>
+                <button class="sign-buttons" onclick="calculate('=')">=</button>
+                <button class="sign-buttons" onclick="appendToDisplay('/')">/</button>
+                <button class="sign-buttons" onclick="clearToDisplay()">C</button>
+            </div>
+        </div>
+    </div>
+    <script src="practise.js"></script>
+</body>
+</html>

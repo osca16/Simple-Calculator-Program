@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box; /* Added to manage padding and borders */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; /* Centering the container */
+    align-items: center; /* Centering the container vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Column layout for buttons */
+    align-items: center;
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.Calculator {
+    border: 2px solid rgb(255, 179, 0);
+    border-radius: 20px;
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding for better spacing */
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.display {
+    border-radius: 8px;
+    height: 55px;
+    color: black;
+    font-size: 20px;
+    text-indent: 2px;
+    border: 1px solid rgb(26, 255, 0);
+    width: 100%; /* Full width */
+}
+
+.button, .sign-buttons {
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 18px;
+    width: 45px;
+    text-align: center;
+    margin: 5px;
+}
+
+.button {
+    background-color: rgb(255, 179, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.sign-buttons {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 179, 0);
+}
+
+
+@media (max-width: 768px) {
+    .Calculator {
+        padding: 15px; 
+    }
+    .button, .sign-buttons {
+        width: 40px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .display {
+        font-size: 18px; 
+    }
+}
